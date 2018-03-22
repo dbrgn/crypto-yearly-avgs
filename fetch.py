@@ -45,7 +45,7 @@ for coin in coins:
     url = '%s/api/coin/history/%s/%s/%s/price/%s' % (base_url, coin[1], start, end, base_currency)
     print('Requesting %s' % url)
     resp = requests.get(url, headers={
-        'aKey': api_key,
+        'Key': api_key,
         'Secret': api_secret,
         'Accept': 'application/json',
     })
